@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>CRUD </title>
+    <title>Sistema Acadêmico</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -28,28 +28,37 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a href="<?php echo BASEURL; ?>index.php" class="navbar-brand">CRUD</a>
+          <a href="<?php echo BASEURL; ?>index.php" class="navbar-brand">Sistema Acadêmico</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">          
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                    Clientes <span class="caret"></span>
+                    Alunos <span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu">
-                    <li><a href="<?php echo BASEURL; ?>usuarios">Gerenciar Clientes</a></li>
-                    <li><a href="<?php echo BASEURL; ?>usuarios/add.php">Novo Cliente</a></li>
+                    <li><a href="<?php echo BASEURL; ?>alunos">Gerenciar Alunos</a></li>
+                    <li><a href="<?php echo BASEURL; ?>alunos/add.php">Novo Alunos</a></li>
                 </ul>
             </li>
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                    Produtos <span class="caret"></span>
+                    Cursos <span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu">
-                    <li><a href="<?php echo BASEURL; ?>produtos">Gerenciar Produtos</a></li>
-                    <li><a href="<?php echo BASEURL; ?>produtos/add.php">Novo Produto</a></li>
+                    <li><a href="<?php echo BASEURL; ?>cursos">Gerenciar Cursos</a></li>
+                    <li><a href="<?php echo BASEURL; ?>cursos/add.php">Novo Curso</a></li>
                 </ul>
-            </li>            
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    Turmas <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="<?php echo BASEURL; ?>turmas">Gerenciar Turmas</a></li>
+                    <li><a href="<?php echo BASEURL; ?>turmas/add.php">Nova Turma</a></li>
+                </ul>
+            </li>                        
           </ul>
         </div><!--/.navbar-collapse -->
       </div>
