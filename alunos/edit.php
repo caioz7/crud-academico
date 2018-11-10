@@ -7,36 +7,30 @@
 
 <h2>Atualizar Cliente</h2>
 
-<form action="edit.php?id=<?php echo $usuario['id']; ?>" method="post">
+<form action="edit.php?id=<?php echo $aluno['id']; ?>" method="post">
   <hr />
   <div class="row">
     <div class="form-group col-md-7">
       <label for="name">Nome</label>
-      <input type="text" class="form-control" name="usuario['nome']" value="<?php echo $usuario['nome']; ?>">
+      <input type="text" class="form-control" name="aluno['nome']" value="<?php echo $aluno['nome']; ?>">
     </div>
 
     <div class="form-group col-md-3">
       <label for="campo2">CPF</label>
-      <input type="text" class="form-control" name="usuario['cpf']" value="<?php echo $usuario['cpf']; ?>">
+      <input type="text" class="form-control" name="aluno['cpf']" value="<?php echo $aluno['cpf']; ?>">
     </div>
 
     <div class="form-group col-md-2">
-      <label for="campo3">Cidade</label>
-      <input type="text" class="form-control" name="usuario['cidade']" value="<?php echo $usuario['cidade']; ?>">
+      <label for="campo3">R.A</label>
+      <input type="text" class="form-control" name="aluno['ra']" value="<?php echo $aluno['ra']; ?>">
     </div>
   </div>
   <div class="row">
     <div class="form-group col-md-5">
-      <label for="campo1">Estado</label>
-      <input type="text" class="form-control" name="usuario['estado']" value="<?php echo $usuario['estado']; ?>">
+      <label for="campo1">Senha</label>
+      <input type="text" class="form-control" name="aluno['senha']" value="<?php echo $aluno['senha']; ?>">
+        
     </div>
-
-    <div class="form-group col-md-3">
-      <label for="campo2">Telefone</label>
-      <input type="text" class="form-control" name="usuario['telefone']" value="<?php echo $usuario['telefone']; ?>">
-    </div>
-
-    
   </div>
   <div id="actions" class="row">
     <div class="col-md-12">

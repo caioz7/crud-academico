@@ -2,12 +2,12 @@
 require_once('../config.php');
 require_once(DBAPI);
 
-$usuarios = null;
-$usuario = null;
+$alunos = null;
+$aluno = null;
 
 function index() {
-	global $usuarios;
-	$usuarios = find_all('usuarios');
+	global $alunos;
+	$alunos = find_all('alunos');
 }
 
 
@@ -15,11 +15,11 @@ function index() {
 
 <?php
 function add() {
-  if (!empty($_POST['usuario'])) {
+  if (!empty($_POST['alunos'])) {
     
-    $usuario = $_POST['usuario'];
+    $aluno = $_POST['aluno'];
     
-    save('usuarios', $usuario);
+    save('alunos', $aluno);
     header('location: index.php');
   }
 }
@@ -31,14 +31,14 @@ function edit() {
   
   if (isset($_GET['id'])) {
     $id = $_GET['id'];
-    if (isset($_POST['usuario'])) {
-      $usuario = $_POST['usuario'];
+    if (isset($_POST['aluno'])) {
+      $aluno = $_POST['aluno'];
       
-      update('usuarios', $id, $usuario);
+      update('alunos', $id, $aluno);
       header('location: index.php');
     } else {
-      global $usuario;
-      $usuario = find('usuarios', $id);
+      global $aluno;
+      $aluno = find('alunos', $id);
     } 
   } else {
     header('location: index.php');
@@ -48,14 +48,14 @@ function edit() {
 <?php
 
 function view($id = null) {
-  global $usuario;
-  $usuario = find('usuarios', $id);
+  global $aluno;
+  $aluno = find('alunos', $id);
 }
 ?>
 <?php
 
 function delete($id = null) {
-  global $usuario;
-  $usuario = remove('usuarios', $id);
+  global $aluno;
+  $aluno = remove('alunos', $id);
   header('location: index.php');
 }

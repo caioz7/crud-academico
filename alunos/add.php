@@ -5,7 +5,7 @@
 
 <?php include(HEADER_TEMPLATE); ?>
 
-<h2>Novo Cliente</h2>
+<h2>Novo Aluno</h2>
 
 <form action="add.php" method="post">
   <!-- area de campos do form -->
@@ -13,29 +13,24 @@
   <div class="row">
     <div class="form-group col-md-7">
       <label for="name">Nome</label>
-      <input type="text" class="form-control" name="usuario['nome']">
+      <input type="text" class="form-control" name="aluno['nome']">
     </div>
 
     <div class="form-group col-md-3">
       <label for="campo2">CPF</label>
-      <input type="text" class="form-control" name="usuario['cpf']">
+      <input type="text" class="form-control" name="aluno['cpf']">
     </div>
 
     <div class="form-group col-md-2">
-      <label for="campo3">Cidade</label>
-      <input type="text" class="form-control" name="usuario['cidade']">
+      <label for="campo3">R.A</label>
+      <input type="text" class="form-control" name="aluno['ra']">
     </div>
   </div>
   
   <div class="row">
     <div class="form-group col-md-5">
-      <label for="campo1">Estado</label>
-      <input type="text" class="form-control" name="usuario['estado']">
-    </div>
-
-    <div class="form-group col-md-3">
-      <label for="campo2">Telefone</label>
-      <input type="text" class="form-control" name="usuario['telefone']">
+      <label for="campo1">Senha</label>
+      <input type="text" class="form-control" name="aluno['senha']">
     </div>
     </div>
   

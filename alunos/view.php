@@ -5,7 +5,7 @@
 
 <?php include(HEADER_TEMPLATE); ?>
 
-<h2>Cliente de Id: <?php echo $usuario['id']; ?></h2>
+<h2>Aluno de Id: <?php echo $aluno['id']; ?></h2>
 <hr>
 
 <?php if (!empty($_SESSION['message'])) : ?>
@@ -14,25 +14,22 @@
 
 <dl class="dl-horizontal">
 	<dt>Nome:</dt>
-	<dd><?php echo $usuario['nome']; ?></dd>
+	<dd><?php echo $aluno['nome']; ?></dd>
 
 	<dt>CPF:</dt>
-	<dd><?php echo $usuario['cpf']; ?></dd>
+	<dd><?php echo $aluno['cpf']; ?></dd>
 	 
-	<dt>Cidade:</dt>
-	<dd><?php echo $usuario['cidade']; ?></dd>
+	<dt>RA:</dt>
+	<dd><?php echo $aluno['ra']; ?></dd>
 
-	<dt>Estado:</dt>
-	<dd><?php echo $usuario['estado']; ?></dd>
-	
-	<dt>Telefone</dt>
-	<dd><?php echo $usuario['telefone']; ?></dd>
+	<dt>Senha:</dt>
+	<dd><?php echo $aluno['senha']; ?></dd>
 </dl>
 
 
 <div id="actions" class="row">
 	<div class="col-md-12">
-	  <a href="edit.php?id=<?php echo $usuario['id']; ?>" class="btn btn-primary">Editar</a>
+	  <a href="edit.php?id=<?php echo $aluno['id']; ?>" class="btn btn-primary">Editar</a>
 	  <a href="index.php" class="btn btn-default">Voltar</a>
 	</div>
 </div>
